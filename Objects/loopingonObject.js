@@ -18,10 +18,7 @@ function NumsFreq(nums) {
         if (freqObj[key] === 1) {
             return key;
         }
-
-      
     }
-
     return freqObj;
 
     // approch 2
