@@ -22,4 +22,23 @@ function sLargestElement(arr){
 
 }
 
-sLargestElement(arr);
+// sLargestElement(arr);
+
+
+function secondLargest(arr){
+    let fLargest = arr[0];
+    let sLargest = -1;
+
+    for(let i=0; i< arr.length; i++){
+        if(arr[i] > fLargest){
+            sLargest = fLargest;
+            fLargest = arr[i];
+        } else if(arr[i] > sLargest && arr[i] !== fLargest){
+            sLargest = arr[i]
+        }
+    }
+
+    console.log("Second Largest :",sLargest);
+}
+
+secondLargest(arr);
