@@ -42,11 +42,11 @@ function rotateArrByDPlaces(arr, d){
 
 	// right rotate array
 	// rotate first first n-k element 
-	reverse(arr,0, n-k-1 );
-	// rotate last k elements
-	reverse(arr, n-k,n-1 );
-	//  rotate whole array
-	reverse(arr, 0, n-1);
+reverse(arr,0, n-k-1 );
+// rotate last k elements
+reverse(arr, n-k,n-1 );
+//  rotate whole array
+reverse(arr, 0, n-1);
 	console.log(arr);
 
 }
