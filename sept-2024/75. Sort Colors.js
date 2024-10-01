@@ -21,3 +21,5 @@ var sortColors = function(nums) {
     for (let i = cnt0; i < cnt0 + cnt1; i++) nums[i] = 1;  // Replace 1s
     for (let i = cnt0 + cnt1; i < n; i++) nums[i] = 2;  // Replace 2s
 }
+
+//  optimal approch approch
