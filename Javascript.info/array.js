@@ -1,9 +1,3 @@
-let users = [
-  { id: 1, name: "John", age: 18 },
-  { id: 2, name: "Pete", age: 18 },
-  { id: 3, name: "Mary", age: 18 },
-];
-
 //
 
 let arr = new Array();
@@ -36,7 +30,7 @@ let numbers = [1, 2, 3, 4];
 // methods push and unshift can add multiple elements from front and back
 
 numbers.unshift(0);
-console.log(numbers);
+// console.log(numbers);
 // console.log(numbers.shift())
 
 //  Methods push/ pop are fast as compare to shift /unshift  because in from the end its to add . remove element but from the front side   first if shift then remove  then move all elements to left and renumber them then update length similar to unshift thats why its very slow to working with shift / unshift;
@@ -55,13 +49,13 @@ console.log(numbers);
 //   What is this code going to show?
 
 let fruits2 = ["apple", "banana", "mango"];
-console.log("Before", fruits2);
+// console.log("Before", fruits2);
 
 let shoppingCart = fruits2;
 
 shoppingCart.push("Berry");
 
-console.log("after", fruits2);
+// console.log("after", fruits2);
 
 //    array are objects and shopping cart its also points to same referenced so it will also change original array;
 
@@ -75,14 +69,41 @@ console.log("after", fruits2);
     Prepend Rap and Reggae to the array.
 
  */
-const arr3 = ["Jazz", "Blues"];
+// const arr3 = ["Jazz", "Blues"];
 
-arr3.push("Rock-In-Roll");
+// arr3.push("Rock-In-Roll");
 
-arr3[Math.floor(arr3.length - 1 / 2)] = "Classics";
+// arr3[Math.floor(arr3.length - 1 / 2)] = "Classics";
 
-console.log(arr3.shift());
+// console.log(arr3.shift());
 
-arr3.unshift("Rap", "Reggae");
+// arr3.unshift("Rap", "Reggae");
 
-console.log(arr3);
+// console.log(arr3);
+
+//  Methods
+
+// let arr4 = ["1", "go","home"]
+
+// delete arr4[0];
+
+// console.log(arr4)/
+
+//  Important Array Methods
+
+//  Finds
+
+let users = [
+  { id: 1, name: "John", age: 21 },
+  { id: 2, name: "Pete", age: 21 },
+  { id: 3, name: "Mary", age: 18 },
+];
+
+//    to Find user In array
+let user = users.find((user) => (user.name = "John"));
+
+//  If there many user if we want to find in array  then we use filter
+
+let filteredUser = users.filter((user) => user.age > 20);
+
+console.log(`user`, filteredUser);
