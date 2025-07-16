@@ -29,3 +29,7 @@ function sum1(arr, n) {
 let arr1 = [5, 3, 2, 6, 1];
 let n1 = arr.length - 1;
 console.log(sum(arr1, n1));
+
+
+
+
