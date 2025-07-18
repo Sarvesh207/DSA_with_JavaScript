@@ -30,7 +30,7 @@ var fib = function(n) {
         a = b;
         b = temp;
     }
-
+        
     return b;
 
 };
