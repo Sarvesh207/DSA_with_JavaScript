@@ -17,7 +17,7 @@ function binarySearch(arr, target) {
   return -1;
 }
 
-const arr = [1, 2, 4, 7, 9, 15];
-let target = 9;
+const arr = [1, 2, 4, 7, 9, 12];
+let target = 12;
 
 console.log(binarySearch(arr, target));
