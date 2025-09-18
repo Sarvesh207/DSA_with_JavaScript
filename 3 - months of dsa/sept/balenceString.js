@@ -21,33 +21,24 @@ var balancedStringSplit = function (s) {
   return count;
 };
 
-
-
-
-//  Other Approch  
-
-
+//  Other Approch
 
 /**
  * @param {string} s
  * @return {number}
  */
 var balancedStringSplit = function (s) {
-    temp = 0
-    let count = 0;
+  temp = 0;
+  let count = 0;
 
-    for (let i = 0; i < s.length; i++) {
+  for (let i = 0; i < s.length; i++) {
+    if (s[i] == "R") temp++;
+    else temp--;
 
-        if (s[i] == "R") temp++
-        else temp--;
-
-        if (temp === 0) {
-
-
-            count++
-        }
-
+    if (temp === 0) {
+      count++;
     }
+  }
 
-    return count;
+  return count;
 };
